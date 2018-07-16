@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.anonymi.anonymi">
 
-
     <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
@@ -12,15 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Fragments.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Splash"></activity>
-        <activity android:name=".Tabs.ContactActivity"></activity>
+        <activity android:name=".Fragments.Splash" />
+        <activity android:name=".Tabs.NewStatus" android:theme="@style/AppTheme.cstmTheme"/>
+        <activity android:name=".Fragments.Contact.ContactActivity" />
+        <activity android:name=".Fragments.Chat.ChatActivity"></activity>
     </application>
 
 </manifest>

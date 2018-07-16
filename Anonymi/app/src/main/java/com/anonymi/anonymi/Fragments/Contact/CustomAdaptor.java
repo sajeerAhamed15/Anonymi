@@ -1,10 +1,15 @@
-package com.anonymi.anonymi;
+package com.anonymi.anonymi.Fragments.Contact;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.TextView;
+
+import com.anonymi.anonymi.Fragments.Contact.ContactModel;
+import com.anonymi.anonymi.R;
+
 import java.util.ArrayList;
 
 public class CustomAdaptor extends BaseAdapter {
@@ -53,6 +58,7 @@ public class CustomAdaptor extends BaseAdapter {
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView = inflater.inflate(R.layout.contact_single_view, null, true);
 
+            holder.tvBtn = (Button)convertView.findViewById(R.id.cntBtn);
             holder.tvname = (TextView) convertView.findViewById(R.id.name);
             holder.tvnumber = (TextView) convertView.findViewById(R.id.number);
 
@@ -71,6 +77,7 @@ public class CustomAdaptor extends BaseAdapter {
     private class ViewHolder {
 
         protected TextView tvname, tvnumber;
+        protected Button tvBtn;
 
     }
 }
