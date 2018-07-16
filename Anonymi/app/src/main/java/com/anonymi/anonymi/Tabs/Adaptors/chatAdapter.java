@@ -1,4 +1,4 @@
-package com.anonymi.anonymi.Tabs;
+package com.anonymi.anonymi.Tabs.Adaptors;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,13 +10,13 @@ import android.widget.TextView;
 import com.anonymi.anonymi.R;
 
 
-public class hubAdapter extends BaseAdapter {
+public class chatAdapter extends BaseAdapter{
     String[] namee;
     String[] details;
     String[] tags;
     Context context;
     private static LayoutInflater inflater=null;
-    public hubAdapter(Context mainActivity, String[] name, String[] status,String[] tagss) {
+    public chatAdapter(Context mainActivity, String[] name, String[] status,String[] tagss) {
         // TODO Auto-generated constructor stub
         namee =name;
         details =status;
@@ -52,7 +52,7 @@ public class hubAdapter extends BaseAdapter {
         // TODO Auto-generated method stub
         Holder holder=new Holder();
         View rowView;
-        rowView = inflater.inflate(R.layout.anohub_single_view, null);
+        rowView = inflater.inflate(R.layout.anon_chat_single_view, null);
         holder.tv=(TextView) rowView.findViewById(R.id.name);
         holder.stv=(TextView) rowView.findViewById(R.id.number);
         holder.tag= (TextView)rowView.findViewById(R.id.tag) ;

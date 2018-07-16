@@ -1,4 +1,4 @@
-package com.anonymi.anonymi;
+package com.anonymi.anonymi.Fragments;
 
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
@@ -7,7 +7,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.anonymi.anonymi.Tabs.ContactActivity;
+import com.anonymi.anonymi.Fragments.Contact.ContactActivity;
+import com.anonymi.anonymi.R;
+import com.anonymi.anonymi.Tabs.NewStatus;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), ContactActivity.class));
     }
     public void newPost(View view) {
-
+        startActivity(new Intent(getApplicationContext(),NewStatus.class));
     }
 
 }

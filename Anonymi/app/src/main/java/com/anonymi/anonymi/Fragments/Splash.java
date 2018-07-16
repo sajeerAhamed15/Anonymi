@@ -1,4 +1,4 @@
-package com.anonymi.anonymi;
+package com.anonymi.anonymi.Fragments;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +8,9 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.anonymi.anonymi.Fragments.MainActivity;
+import com.anonymi.anonymi.R;
 
 public class Splash extends AppCompatActivity {
 

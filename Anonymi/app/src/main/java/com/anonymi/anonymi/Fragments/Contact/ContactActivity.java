@@ -1,4 +1,4 @@
-package com.anonymi.anonymi.Tabs;
+package com.anonymi.anonymi.Fragments.Contact;
 
 import android.database.Cursor;
 import android.provider.ContactsContract;
@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 
-import com.anonymi.anonymi.ContactModel;
-import com.anonymi.anonymi.CustomAdaptor;
 import com.anonymi.anonymi.R;
 
 import java.util.ArrayList;

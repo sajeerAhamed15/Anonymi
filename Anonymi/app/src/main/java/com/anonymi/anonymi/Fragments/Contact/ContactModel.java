@@ -1,4 +1,4 @@
-package com.anonymi.anonymi;
+package com.anonymi.anonymi.Fragments.Contact;
 public class ContactModel {
 
     private String name, number;
