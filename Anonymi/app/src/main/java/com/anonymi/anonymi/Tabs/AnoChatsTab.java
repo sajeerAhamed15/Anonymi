@@ -12,7 +12,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.anonymi.anonymi.Fragments.Chat.ChatActivity;
 import com.anonymi.anonymi.Fragments.MainActivity;
 import com.anonymi.anonymi.R;
 import com.anonymi.anonymi.Tabs.Adaptors.chatAdapter;
